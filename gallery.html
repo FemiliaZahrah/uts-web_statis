@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omah Pisang</title>
+    <link rel="stylesheet" href="styleUTS.css">
+    <script src="https://kit.fontawesome.com/82aa28a5c5.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="Images/x-icon" href="Images/FaviconOmahPisang.jpg">
+    <script src="https://kit.fontawesome.com/62abb6a331.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+       <!--navbar-->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">OmahPisang</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="web_statis.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!--List produk omah pisang-->
+<section id="produk">
+    <div class="title-galleryomahpisang">
+        <h2>Gallery Omah Pisang</h2>
+    </div>
+    <div class="omahpisang">
+        <div class="produk-omahpisang">
+            <img src="Images/piscoklumer2.jpg" alt="Piscok Lumer" title="Piscok Lumer">
+            <h3>Piscok Lumer</h3>
+            <p id="omahpisang1">Pisang coklat lumer atau biasa disebut dengan nama Piscok Lumer, pisang yang dibaluti kulit lumpia
+                dan berisi coklat yang banyak sehingga menjadi lumer. Menu ini salah satu menu terfavorit di Omah Pisang.</p>
+            <button type="button" onclick='document.getElementById("omahpisang1").innerHTML= "Rp15.000"'>BUY</button>
+        </div>
+        <div class="produk-omahpisang">
+            <img src="Images/pisangtaichan2.jpg" alt="Pisang Taichan" title="Pisang Taichan">
+            <h3>pisang Taichan</h3>
+            <p id="omahpisang2">Pisang Taichan, pisang yang ditusuk menggunakan tusuk sate kemudian dibaluti dengan tepung terigu dan
+                tepung roti kemudian bagian atasnya dicelupkan kedalam toping coklat.</p>
+            <button type="button" onclick='document.getElementById("omahpisang2").innerHTML= "Rp13.000"'>BUY</button>
+        </div>
+        <div class="produk-omahpisang">
+            <img src="Images/pisangrambut2.jpg" alt="Pisang Rambut" title="Pisang Rambut">
+            <h3>Pisang Rambut</h3>
+            <p id="omahpisang3">Pisang Rambut, pisang yang dibaluti dengan tepung terigu yang dibuat menyerupai dengan buah rambutan
+                kemudian atasnya diberikan toping yang telah disediakan secara bebas.</p>
+            <button type="button" onclick='document.getElementById("omahpisang3").innerHTML= "Rp15.000"'>BUY</button>
+        </div>
+        <div class="produk-omahpisang">
+            <img src="Images/pisangnugget2.jpg" alt="Pisang Nugget" title="Pisang Nugget">
+            <h3>Pisang Nugget</h3>
+            <p id="omahpisang4">Pisang Nugget, pisang yang dibaluti dengan tepung terigu dan tepung roti yang didalamnya berisi Coklat.
+                Pisang ini dibuat menyerupai bentuk Fast Food Nugget.</p>
+            <button type="button" onclick='document.getElementById("omahpisang4").innerHTML= "Rp13.000"'>BUY</button>
+        </div>
+        <div class="produk-omahpisang">
+            <img src="Images/bananacheeseroll2.jpg" alt="Banana Cheese Roll" title="Banana Cheese Roll">
+            <h3>Banana Cheese Roll</h3>
+            <p id="omahpisang5">Banana Cheese Roll, pisang yang dibaluti kulit lumpia dan didalam nya berisikan Keju
+                kemudian atasnya bisa diberikan toping yang telah disediakan.</p>
+            <button type="button" onclick='document.getElementById("omahpisang5").innerHTML= "Rp15.000"'>BUY</button>
+        </div>
+        <div class="produk-omahpisang">
+            <img src="Images/pisanggoreng.jpg" alt="Pisang Goreng" title="Pisang Goreng">
+            <h3>Pisang Goreng</h3>
+            <p id="omahpisang6">Pisang Goreng, pisang ini dibaluti dengan tepung terigu dan atasnya bisa diberikan toping
+                yang telah disediakan.</p>
+            <button type="button" onclick='document.getElementById("omahpisang6").innerHTML= "Rp12.000"'>BUY</button>
+        </div>
+        <div class="produk-omahpisang">
+            <img src="Images/pisangbakar.jpg" alt="Pisang Bakar" title="Pisang Bakar">
+            <h3>Pisang Bakar</h3>
+            <p id="omahpisang7">Pisang Bakar, pisang ini dipotong tengah menjadi dua bagian kemudian dibakar dan bisa diberikan
+                toping yang telah disediakan.</p>
+            <button type="button" onclick='document.getElementById("omahpisang7").innerHTML= "Rp10.000"'>BUY</button>
+        </div>
+    </div>
+</section>
+
+<div class="best-seller">
+    <h2>BEST SELLER OMAH PISANG</h2>
+</div>
+<div class="gallery">
+    <div class="gallery-container">
+        <img class="gallery-item gallery-item-1" src="Images/pisangnugget2.jpg" data-index="1">
+        <img class="gallery-item gallery-item-2" src="Images/pisangrambut2.jpg" data-index="2">
+        <img class="gallery-item gallery-item-3" src="Images/pisangtaichan2.jpg" data-index="3">
+        <img class="gallery-item gallery-item-4" src="Images/piscoklumer2.jpg" data-index="4">
+    </div>
+    <div class="gallery-controls"></div>
+    </div>
+
+<script src="script.js"></script>
+
+</section>
+
+<script type="text/javascript">
+var lastScrollTop = 0;
+    navbar = document.getElementById("navbar");
+window.addEventListener("scroll", function(){
+    var scrollTop = window.pageYOffset || document
+        .documentElement.scrollTop;
+    if (scrollTop > lastScrollTop){
+        navbar.style.top='-80px';
+    } else {
+        navbar.style.top="0";
+    }
+    lastScrollTop = scrollTop;
+})
+
+var icon = document.getElementById("icon");
+
+icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+        icon.src = "Images/Sun black.png";
+    }else{
+        icon.src = "Images/Moon White.png";
+    }
+}
+</script>
+
+<div class="media">
+    <video src="Images/BananaCheeseRollVideo.mp4" controls></video>
+    <video src="Images/PisangNuggetVideo.mp4" controls></video>
+    <video src="Images/PisangRambutVideo.mp4" controls></video>
+</div>
+
+<!--footer dan icons-->
+<footer>
+    <div class="footer">
+        <div class="tagline">
+            <p><i>© Femilia Julianti Zahrah</i> | 1122025100017</p>
+        </div>
+        <div class="kontak">
+            <p>Ikuti Kami:</p>
+        </div>
+        <div class="icons">
+            <a href="https://www.instagram.com/femiliazhrh/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a href="mailto:zahrahfemilia@gmail.com" target="_blank"><i class="fa-regular fa-envelope fa-2x"></i></a>
+        </div>
+    </div>
+</footer>

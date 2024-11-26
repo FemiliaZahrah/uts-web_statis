@@ -1,0 +1,159 @@
+header {
+    background-color: beige; /* Slight transparency */
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo a {
+    font-size: 2.0em;
+    font-weight: bold;
+    color: #644117;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #644117;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: gray;
+}
+
+/* General Section Styling */
+#contact-us {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contact-us h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  /* Contact Information */
+  .contact-info {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .contact-info a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  
+  form label {
+    font-size: 16px;
+    color: #644117;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid beige;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  form textarea {
+    resize: vertical;
+  }
+  
+  form button {
+    padding: 12px;
+    background-color: #644117;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: beige;
+  }
+
+  /*footer dan icons*/
+footer {
+    background-color: beige; 
+    padding: 10px; 
+    text-align: left; 
+    font-family: Verdana;
+}
+
+.footer {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1190px; 
+    margin: 10px auto; 
+    padding-bottom: 10px;
+}
+.tagline {
+    padding-top: 20px;
+}
+.kontak {
+    padding-top: 20px;
+    padding-left: 510px;
+}
+.icons {
+    padding-top: 18px;
+    display: flex;
+}
+.fa-brands.fa-instagram.fa-2x {
+    color: purple;
+    padding-right: 15px;
+}
+.fa-regular.fa-envelope.fa-2x {
+    color: red;
+    padding-right: 15px;
+}

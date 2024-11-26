@@ -1,0 +1,139 @@
+header {
+    background-color: beige; /* Slight transparency */
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo a {
+    font-size: 2.0em;
+    font-weight: bold;
+    color: #644117;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #644117;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: gray;
+}
+
+.hubungi {
+    text-align: center;
+}
+
+.isihubungi {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.isiform  {
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+
+}
+
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+} 
+
+.input label {
+    margin-bottom: 5px;
+
+}
+
+.input input {
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    width: 100%;
+} 
+
+label {
+    display: block;
+}
+
+input:invalid,
+input:required:invalid {
+    border: none;
+    outline: 2px solid #44635b;
+}
+
+input:valid
+input:required {
+    border: 1px solid black;
+    outline: inherit;
+}
+
+ /*footer dan icons*/
+ footer {
+    background-color: beige; 
+    padding: 10px; 
+    text-align: left; 
+    font-family: Verdana;
+}
+
+.footer {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1190px; 
+    margin: 10px auto; 
+    padding-bottom: 10px;
+}
+.tagline {
+    padding-top: 20px;
+}
+.kontak {
+    padding-top: 20px;
+    padding-left: 510px;
+}
+.icons {
+    padding-top: 18px;
+    display: flex;
+}
+.fa-brands.fa-instagram.fa-2x {
+    color: purple;
+    padding-right: 15px;
+}
+.fa-regular.fa-envelope.fa-2x {
+    color: red;
+    padding-right: 15px;
+}

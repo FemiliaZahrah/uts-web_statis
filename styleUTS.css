@@ -1,0 +1,777 @@
+.OmahPisang {
+    height: 94vh;
+    width: 94%;
+    background-image: url(Images/banneromahpisang2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 30px 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 100;
+}
+
+.pofile {
+    height: 94vh;
+    width: 94%;
+    padding: 30px 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 100;
+}
+
+/*bagian navbar - home page atas*/
+.slide {
+    height: 100%;
+    width: 180px;
+    position: absolute;
+    background-color: beige;
+    transition: 0.5s ease;
+    transform: translateX(-180px);
+    padding-bottom: 40%;
+}
+
+.slide h1 {
+    color: #964b00;
+    font-weight: 800;
+    text-align: right;
+    padding: 10px 0;
+    padding-right: 30px;
+    pointer-events: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    color: #964b00;
+    font-weight: 500;
+    padding: 5px 0;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+    padding-top: 20px;
+}
+
+ul li:hover a {
+    color: beige;
+    background-color: white;
+    
+}
+ul li a i {
+    width: 40px;
+    text-align: center;
+}
+input {
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+
+.toggle {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 20px;
+    left: 15px;
+    z-index: 999;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: beige;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.toggle .common {
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #964b00;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+.toggle .top_line{
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle .middle_line{
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle .bottom_line{
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input:checked ~ .toggle .top_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+
+input:checked ~ .toggle .bottom_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+
+input:checked ~ .toggle .middle_line{
+    opacity: 0;
+    transform: translate(20px);
+}
+
+input:checked ~ .slide {
+    transform: translateX(0);
+    box-shadow: 0 0 15px black;
+ }
+
+header {
+    background-color: beige; /* Slight transparency */
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo a {
+    font-size: 2.0em;
+    font-weight: bold;
+    color: #644117;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #644117;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: gray;
+}
+
+.outline p {
+    text-align: center;
+    color: #644117;
+    padding: 10px;
+    outline-style: double;
+    outline-color: #964b00;
+    outline-width: 5px;
+    outline-offset: 10px;
+    background-color: beige;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+/*box-model*/
+.bubble-box {
+    position: relative;
+    padding: 30px;
+    border: 8px solid #964b00;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: beige;
+    width: 1100px;
+    font-family:Verdana;
+    font-size: 17px;
+    font-style: normal;
+    text-align: justify;
+    line-height: 1.5;
+  }
+
+  /* Menu list */
+.container-Menu {
+    display: flex;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.content-Menu {
+    line-height: 1,5;
+    padding: 10px;
+}
+
+.content-Menu p { 
+    text-align: justify;
+    line-height: 1.2;
+    font-size: 16px;
+    font-family: Verdana;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+dl.a {
+    list-style:disc;
+    background: beige;
+    padding: 20px;
+    line-height: 1.8;
+    margin-inline-start: 10px;
+    float: left;
+    width: 50%;
+}
+
+dl {
+    margin-bottom: 5px;
+}
+
+dl dt {
+    background: #964b00;
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+dl dd {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 40px;
+    margin-right: 10px;
+    padding: 2px;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+dl li {
+    margin-bottom: 5px;
+    margin-left: 5%;
+    font-size: 15px;
+    text-align: justify;
+    opacity: 80%;
+}
+
+.image-OmahPisang {
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 50px;
+    gap: 10px;
+    overflow: hidden;
+    padding: 0;
+    float: right;
+    width: 40%
+}
+
+.image-OmahPisang img {
+    height: auto;
+    display: block;
+    width: 92%;
+    padding-bottom: 5px;
+}
+
+.tabel {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.tabel th,.tabel td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+.tabel th {
+    background-color: #644117;
+    color: white;
+    font-weight: bold;
+}
+
+.tabel tr:nth-child(even) {
+    background-color: beige;
+}
+
+.tabel tr:hover {
+    background-color: #644117;
+}
+
+/* OmahPisang Produk*/
+.title-galleryomahpisang {
+    background-color: beige;
+    font-family: "kalam", serif;
+    padding: 10px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 24px;
+    color: #644117;
+}
+.omahpisang {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+} 
+.produk-omahpisang {
+    background-color: beige;
+    padding: 1.5em;
+    width: 200px;
+    text-align: center;
+    border-radius: 6px;
+    color: #644117;
+}
+
+.produk-omahpisang img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6)
+}
+.produk-omahpisang h3 {
+    margin-top: 10px;
+    color: #644117;
+}
+.produk-omahpisang button {
+    padding: 10px 20px;
+    background-color:white;
+    color: #644117;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.produk-omahpisang button:hover {
+    background-color: beige;
+}   
+
+#omahpisang1 {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: justify;
+}
+#omahpisang2 {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: justify;
+}
+#omahpisang3 {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: justify;
+}
+.title-galleryomahpisang {
+    background-color: beige;
+    padding: 10px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 24px;
+    color: #644117;
+}
+.omahpisang {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+} 
+.produk-omahpisang {
+    background-color: beige;
+    padding: 1.5em;
+    width: 200px;
+    text-align: center;
+    border-radius: 6px;
+    color: #644117;
+}
+
+.produk-omahpisang img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6)
+}
+.produk-omahpisang h3 {
+    margin-top: 10px;
+    color: #644117;
+}
+.produk-omahpisang button {
+    padding: 10px 20px;
+    background-color: #644117;
+    color: beige;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.produk-omahpisang button:hover {
+    background-color: white;
+}   
+
+#omahpisang1 {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: justify;
+}
+#omahpisang2 {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: justify;
+}
+#omahpisang3 {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: justify;
+}
+#omahpisang4 {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: justify;
+}
+#omahpisang5 {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: justify;
+}
+#omahpisang6 {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: justify;
+}
+#omahpisang7 {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.best-seller{
+    background-color: var(--secondary-color);
+    padding: 15px 15px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+/*gambar slide*/
+.gallery{
+    width: 100%;
+}
+
+.gallery-container{
+    align-items: center;
+    display: flex;
+    height: 400px;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+}
+
+.gallery-item{
+    height: 200px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 300px;
+    z-index: 0;
+    border-radius: 15px;
+    background-size: contain;
+}
+
+.gallery-item-2, .gallery-item-4{
+    height: 250px;
+    opacity: 0.8;
+    width: 380px;
+    z-index: 1;
+}
+
+.gallery-item-2{
+    left: 30%;
+    transform: translateX(-50%);
+}
+
+.gallery-item-3{
+    box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.35);
+    height: 300px;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 430px;
+    z-index: 2;
+}
+
+.gallery-item-4{
+    left: 70%;
+    transform: translateX(-50%);
+}
+
+.gallery-item-5{
+    left: 85%;
+    opacity: 4;
+    transform: translateX(-50%);
+}
+
+.gallery-controls{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+    height: 100px;
+}
+
+.gallery-controls button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 0 50px;
+    padding: 0 12px;
+    text-transform: capitalize;
+}
+
+.gallery-controls-button:focus{
+    outline: none;
+}
+
+.gallery-controls-previous{
+    position: relative;
+    color: var(--secondary-color)
+}
+
+.gallery-controls-previous::before{
+    border: solid var(--secondary-color);
+    border-width: 0 5px 5px 0;
+    content: '';
+    display: inline-block;
+    height: 5px;
+    left: -30px;
+    padding: 10px;
+    position: absolute;
+    top: 25%;
+    transform: rotate(135deg) translateY(-50%);
+    transition: left 0.15s ease-in-out;
+    width: 5px;
+}
+
+.gallery-controls-previous:hover::before{
+    left: -10px;
+}
+
+.gallery-controls-next{
+    position: relative;
+    color: var(--secondary-color)
+}
+
+.gallery-controls-next::before{
+    border: solid var(--secondary-color);
+    border-width: 0 5px 5px 0;
+    content: '';
+    display: inline-block;
+    height: 5px;
+    left: 90px;
+    padding: 10px;
+    position: absolute;
+    top: 45%;
+    transform: rotate(-45deg) translateY(-50%);
+    transition: left 0.15s ease-in-out;
+    width: 5px;
+}
+
+.gallery-controls-next:hover::before{
+    left: 70px;
+}
+
+.media video {
+    width: 33%;
+}
+
+.hubungi {
+    text-align: center;
+}
+
+.isihubungi {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.isiform  {
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+
+}
+
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+} 
+
+.input label {
+    margin-bottom: 5px;
+
+}
+
+.input input {
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    width: 100%;
+} 
+
+label {
+    display: block;
+}
+
+input:invalid,
+input:required:invalid {
+    border: none;
+    outline: 2px solid #44635b;
+}
+
+input:valid
+input:required {
+    border: 1px solid black;
+    outline: inherit;
+}
+
+/* General Section Styling */
+#contact-us {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contact-us h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  /* Contact Information */
+  .contact-info {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .contact-info a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  
+  form label {
+    font-size: 16px;
+    color: #644117;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid beige;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  form textarea {
+    resize: vertical;
+  }
+  
+  form button {
+    padding: 12px;
+    background-color: #644117;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: beige;
+  }
+
+/*footer dan icons*/
+footer {
+    background-color: beige; 
+    padding: 10px; 
+    text-align: left; 
+    font-family: Verdana;
+}
+
+.footer {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1190px; 
+    margin: 10px auto; 
+    padding-bottom: 10px;
+}
+.tagline {
+    padding-top: 20px;
+}
+.kontak {
+    padding-top: 20px;
+    padding-left: 510px;
+}
+.icons {
+    padding-top: 18px;
+    display: flex;
+}
+.fa-brands.fa-instagram.fa-2x {
+    color: purple;
+    padding-right: 15px;
+}
+.fa-regular.fa-envelope.fa-2x {
+    color: red;
+    padding-right: 15px;
+}
